@@ -25,6 +25,7 @@ mkdir -p $endpath/.vim/bundle
 ln -s $endpath/.vimrc $HOME/.vimrc
 ln -s $endpath/.vim $HOME/.vim
 cp $endpath/.vimrc.local $HOME
+cp $endpath/.gitconfig $HOME
 
 echo "Installing Vundle"
 git clone http://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle

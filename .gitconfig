@@ -1,0 +1,20 @@
+[alias]
+	ci = commit
+	st = status
+	co = checkout
+[user]
+	name = xw2423
+	email = wei.xiao.bupt@gmail.com
+[core]
+	editor = vim
+[color]
+	ui = true
+[merge]
+    tool = vim-diff
+[mergetool "vim-diff"]
+    cmd = "vim \"$PWD/$MERGED\" \
+            +\":split $PWD/$REMOTE\" +\":set buftype=nowrite\" \
+            +\":wincmd K\" \
+            +\":vertical diffsplit $PWD/$LOCAL\" +\":set buftype=nowrite\" \
+#            +\":vertical diffsplit $PWD/$BASE\" +\":set buftype=nowrite\" \
+            "

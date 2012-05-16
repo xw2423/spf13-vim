@@ -70,7 +70,7 @@
             Bundle 'altercation/vim-colors-solarized'
             "Bundle 'spf13/vim-colors'
             Bundle 'tpope/vim-surround'
-            Bundle 'AutoClose'
+            "Bundle 'AutoClose'
             "Bundle 'kien/ctrlp.vim'
             "Bundle 'vim-scripts/sessionman.vim'
             "Bundle 'matchit.zip'
