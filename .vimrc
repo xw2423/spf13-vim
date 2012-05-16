@@ -40,8 +40,8 @@
 " Bundles {
     " Deps
         Bundle 'gmarik/vundle'
-        Bundle 'MarcWeber/vim-addon-mw-utils'
-        Bundle 'tomtom/tlib_vim'
+        "Bundle 'MarcWeber/vim-addon-mw-utils'
+        "Bundle 'tomtom/tlib_vim'
         if executable('ack')
             Bundle 'mileszs/ack.vim'
         endif
@@ -56,6 +56,7 @@
     " list only the plugin groups you will use
     if !exists('g:spf13_bundle_groups')
         let g:spf13_bundle_groups=['general', 'programming', 'php', 'ruby', 'python', 'javascript', 'html', 'misc']
+        let g:spf13_bundle_groups=['general', 'programming', 'php', 'javascript', 'html', 'misc']
     endif
 
     " To override all the included bundles, put
@@ -67,38 +68,38 @@
         if count(g:spf13_bundle_groups, 'general')
             Bundle 'scrooloose/nerdtree'
             Bundle 'altercation/vim-colors-solarized'
-            Bundle 'spf13/vim-colors'
+            "Bundle 'spf13/vim-colors'
             Bundle 'tpope/vim-surround'
             Bundle 'AutoClose'
-            Bundle 'kien/ctrlp.vim'
-            Bundle 'vim-scripts/sessionman.vim'
-            Bundle 'matchit.zip'
+            "Bundle 'kien/ctrlp.vim'
+            "Bundle 'vim-scripts/sessionman.vim'
+            "Bundle 'matchit.zip'
             Bundle 'Lokaltog/vim-powerline'
-            Bundle 'Lokaltog/vim-easymotion'
-            Bundle 'godlygeek/csapprox'
-            Bundle 'jistr/vim-nerdtree-tabs'
-            Bundle 'flazz/vim-colorschemes'
-            Bundle 'corntrace/bufexplorer'
+            "Bundle 'Lokaltog/vim-easymotion'
+            "Bundle 'godlygeek/csapprox'
+            "Bundle 'jistr/vim-nerdtree-tabs'
+            "Bundle 'flazz/vim-colorschemes'
+            "Bundle 'corntrace/bufexplorer'
         endif
 
     " General Programming
         if count(g:spf13_bundle_groups, 'programming')
             " Pick one of the checksyntax, jslint, or syntastic
             Bundle 'scrooloose/syntastic'
-            Bundle 'garbas/vim-snipmate'
-            Bundle 'spf13/snipmate-snippets'
+            "Bundle 'garbas/vim-snipmate'
+            "Bundle 'spf13/snipmate-snippets'
             " Source support_function.vim to support snipmate-snippets.
-            if filereadable(expand("~/.vim/bundle/snipmate-snippets/snippets/support_functions.vim"))
-                source ~/.vim/bundle/snipmate-snippets/snippets/support_functions.vim
-            endif
+            "if filereadable(expand("~/.vim/bundle/snipmate-snippets/snippets/support_functions.vim"))
+                "source ~/.vim/bundle/snipmate-snippets/snippets/support_functions.vim
+            "endif
 
-            Bundle 'tpope/vim-fugitive'
+            "Bundle 'tpope/vim-fugitive'
             Bundle 'scrooloose/nerdcommenter'
             Bundle 'godlygeek/tabular'
             if executable('ctags')
                 Bundle 'majutsushi/tagbar'
             endif
-            Bundle 'Shougo/neocomplcache'
+            "Bundle 'Shougo/neocomplcache'
         endif
 
     " PHP
@@ -135,10 +136,10 @@
 
     " Misc
         if count(g:spf13_bundle_groups, 'misc')
-            Bundle 'spf13/vim-markdown'
-            Bundle 'spf13/vim-preview'
+            "Bundle 'spf13/vim-markdown'
+            "Bundle 'spf13/vim-preview'
             Bundle 'tpope/vim-cucumber'
-            Bundle 'Puppet-Syntax-Highlighting'
+            "Bundle 'Puppet-Syntax-Highlighting'
         endif
     endif
 " }
@@ -202,7 +203,7 @@
         " Broken down into easily includeable segments
         set statusline=%<%f\    " Filename
         set statusline+=%w%h%m%r " Options
-        set statusline+=%{fugitive#statusline()} "  Git Hotness
+        "set statusline+=%{ugitive#statusline()} "  Git Hotness
         set statusline+=\ [%{&ff}/%Y]            " filetype
         set statusline+=\ [%{getcwd()}]          " current dir
         set statusline+=%=%-14.(%l,%c%V%)\ %p%%  " Right aligned file nav info
@@ -378,7 +379,7 @@
     " SnipMate {
         " Setting the author var
         " If forking, please overwrite in your .vimrc.local file
-        let g:snips_author = 'Steve Francia <steve.francia@gmail.com>'
+        "let g:snips_author = 'Steve Francia <steve.francia@gmail.com>'
     " }
 
     " NerdTree {
