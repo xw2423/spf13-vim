@@ -18,3 +18,5 @@
             +\":vertical diffsplit $PWD/$LOCAL\" +\":set buftype=nowrite\" \
 #            +\":vertical diffsplit $PWD/$BASE\" +\":set buftype=nowrite\" \
             "
+[http]
+	sslVerify = false
