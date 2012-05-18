@@ -100,6 +100,7 @@
                 Bundle 'majutsushi/tagbar'
             endif
             Bundle 'Shougo/neocomplcache'
+            Bundle 'nathanaelkane/vim-indent-guides'
         endif
 
     " PHP
@@ -530,6 +531,13 @@
         endif
 
      " }
+
+     " indentGuides {
+        let g:indent_guides_guide_size=1
+        "if need auto enable uncommit below
+        "let g:indent_guides_enable_on_vim_startup=1
+
+     "}
 
 
 " }
