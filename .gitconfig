@@ -2,6 +2,7 @@
 	ci = commit
 	st = status
 	co = checkout
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit
 [user]
 	name = xw2423
 	email = wei.xiao.bupt@gmail.com
